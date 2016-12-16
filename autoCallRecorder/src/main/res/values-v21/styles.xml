@@ -1,0 +1,33 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+ 
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    <!-- customize the color palette -->
+    <item name="android:textAllCaps">false</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="colorPrimary">@color/white</item>
+    <item name="colorPrimaryDark">@color/color_e65e5e</item>
+    
+    <item name="colorAccent">@color/color_e65e5e</item>
+    <item name="android:textColorSecondary">@color/color_e65e5e</item>
+    
+    <item name="android:button">@drawable/passcode_selector</item>
+    
+    
+    
+   
+</style>
+
+ 
+
+ 
+
+ 
+    
+
+</resources>

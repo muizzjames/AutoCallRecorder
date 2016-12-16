@@ -1,0 +1,60 @@
+<resources>
+
+    <dimen name="sevenfive">75dp</dimen>
+    <dimen name="sixzero">60dp</dimen>
+    <dimen name="seven">7dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="fourzero">40dp</dimen>
+    <dimen name="threefour">34dp</dimen>
+    <dimen name="onezero">10dp</dimen>
+    <dimen name="twozero">20dp</dimen>
+    <dimen name="twofive">25dp</dimen>
+    <dimen name="onefive">15dp</dimen>
+    <dimen name="oneseven">17dp</dimen>
+    <dimen name="fivezero">50dp</dimen>
+    <dimen name="threefive">35dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="onetwo">12dp</dimen>
+    <dimen name="fourfive">45dp</dimen>
+    <dimen name="fourtwo">42dp</dimen>
+    <dimen name="fivefive">55dp</dimen>
+    <dimen name="foureight">48dp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="nine">9dp</dimen>
+    <dimen name="onefourzero">140dp</dimen>
+    <dimen name="twothreefive">235dp</dimen>
+    <dimen name="sevenzero">70dp</dimen>
+    <dimen name="ninezero">90dp</dimen>
+    <dimen name="onetwozero">120dp</dimen>
+
+
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+    <dimen name="pad_1dp">2dp</dimen>
+    <dimen name="pad_3dp">6dp</dimen>
+    <dimen name="pad_5dp">10dp</dimen>
+    <dimen name="pad_10dp">20dp</dimen>
+    <dimen name="pad_15dp">30dp</dimen>
+    <dimen name="pad_20dp">40dp</dimen>
+    <dimen name="pad_30dp">60dp</dimen>
+    <dimen name="pad_40dp">80dp</dimen>
+    <dimen name="pad_125dp">250dp</dimen>
+    <dimen name="pad_200dp">400dp</dimen>
+    <dimen name="pad_310dp">620dp</dimen>
+    <dimen name="pad_350dp">700dp</dimen>
+
+    <dimen name="txt_7sp">12sp</dimen>
+    <dimen name="txt_12sp">18sp</dimen>
+    <dimen name="txt_13sp">19sp</dimen>
+    <dimen name="txt_14sp">20sp</dimen>
+    <dimen name="txt_15sp">22sp</dimen>
+    <dimen name="txt_16sp">24sp</dimen>
+    <dimen name="txt_18sp">27sp</dimen>
+    <dimen name="txt_20sp">30sp</dimen>
+    <dimen name="txt_25sp">37sp</dimen>
+    <dimen name="divider">1.5dp</dimen>
+
+</resources>

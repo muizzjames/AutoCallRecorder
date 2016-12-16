@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="sevenfive">112.5dp</dimen>
+    <dimen name="sixzero">90.0dp</dimen>
+    <dimen name="seven">10.5dp</dimen>
+    <dimen name="four">6.0dp</dimen>
+    <dimen name="fourzero">60.0dp</dimen>
+    <dimen name="threefour">51.0dp</dimen>
+    <dimen name="onezero">15.0dp</dimen>
+    <dimen name="twozero">30.0dp</dimen>
+    <dimen name="twofive">37.5dp</dimen>
+    <dimen name="onefive">22.5dp</dimen>
+    <dimen name="oneseven">25.5dp</dimen>
+    <dimen name="fivezero">75.0dp</dimen>
+    <dimen name="threefive">52.5dp</dimen>
+    <dimen name="two">3.0dp</dimen>
+    <dimen name="one">1.5dp</dimen>
+    <dimen name="five">7.5dp</dimen>
+    <dimen name="onetwo">18.0dp</dimen>
+    <dimen name="fourfive">67.5dp</dimen>
+    <dimen name="fourtwo">63.0dp</dimen>
+    <dimen name="fivefive">82.5dp</dimen>
+    <dimen name="foureight">72.0dp</dimen>
+    <dimen name="three">4.5dp</dimen>
+    <dimen name="nine">13.5dp</dimen>
+    <dimen name="onefourzero">210.0dp</dimen>
+    <dimen name="twothreefive">352.5dp</dimen>
+    <dimen name="sevenzero">105.0dp</dimen>
+    <dimen name="ninezero">135.0dp</dimen>
+    <dimen name="onetwozero">180dp</dimen>
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/existedlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourfive"
+            android:background="@color/color_e65e5e" >
+
+            <morocco.mycom.myrecorder.utils.CustomTextViewRoboto
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/recordings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/oneseven" />
+
+            <ImageView
+                android:id="@+id/imgRecording"
+                android:layout_width="@dimen/sevenfive"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/onezero"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:src="@drawable/recording_on"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="@dimen/fivezero"
+                android:layout_height="@dimen/fivezero"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onezero"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/onezero"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/menu" />
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/onezero"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/back"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fivefive"
+            android:background="@color/color_e65e5e">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#f46262" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/onezero"
+                android:layout_marginLeft="@dimen/onetwo"
+                android:layout_marginTop="@dimen/onezero"
+                android:layout_toLeftOf="@+id/imgClose"
+                android:background="@drawable/rounded_white" >
+
+                <morocco.mycom.myrecorder.utils.CustomEditTextRoboto
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/imageSearch"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/search"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="@dimen/onefive"
+                    android:singleLine="true"
+                    android:textColor="@color/color_a82b2b"
+                    android:textColorHint="#f46e6e"
+                    android:textSize="@dimen/onefive" />
+
+                <ImageView
+                    android:id="@+id/imageSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/five"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/seven"
+                    android:src="@drawable/search" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/oneseven"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <morocco.mycom.myrecorder.utils.CustomRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/adView_main"
+                android:scrollbars="vertical" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id" >
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <View
+        android:id="@+id/tempView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/five"
+        android:layout_marginTop="@dimen/fivezero" />
+
+</RelativeLayout>

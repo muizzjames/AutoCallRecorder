@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"MyCallRecorder"</string>
+    <string name="facebook_app_id">705870799516371</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_passcode">Enter Passcode</string>
+    <string name="passcode">Passcode</string>
+    <string name="settings">SETTINGS</string>
+    <string name="notifications">Notifications</string>
+    <string name="recordings">ACR</string>
+    <string name="search">Search</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1132202692396549/1877266111</string>
+
+    <string-array name="arr_left_nav_list">
+        <item >Recycle Bin</item>
+        <item >Settings</item>
+        <item >NLL Apps</item>
+        <item >Rate me</item>
+        <item >Tell a friend</item>
+        <item >Help</item>
+    </string-array>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

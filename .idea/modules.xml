@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AutoCallRecorder.iml" filepath="$PROJECT_DIR$/AutoCallRecorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoCallRecorder/autoCallRecorder.iml" filepath="$PROJECT_DIR$/autoCallRecorder/autoCallRecorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rateThisApp_Lib/rateThisApp_Lib.iml" filepath="$PROJECT_DIR$/rateThisApp_Lib/rateThisApp_Lib.iml" />
+    </modules>
+  </component>
+</project>

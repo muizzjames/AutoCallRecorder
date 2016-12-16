@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        applicationId "morocco.mycom.myrecorder"
+        multiDexEnabled true
+        minSdkVersion 15
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':rateThisApp_Lib')
+    compile project(':library')
+    compile files('libs/android-support-v7-recyclerview.jar')
+    compile files('libs/StartAppInApp-3.0.2.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.android.support:appcompat-v7:23.1.1',
+            'com.android.support:support-v4:21.+',
+            'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-identity:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.android.support:multidex:1.0.0'
+}

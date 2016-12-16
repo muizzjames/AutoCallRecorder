@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourfive"
+        android:background="@color/color_e65e5e" >
+
+        <morocco.mycom.myrecorder.utils.CustomTextViewRoboto
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recycle Bin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/oneseven"
+            android:id="@+id/view"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageCancelButton"
+            android:layout_toEndOf="@+id/imageCancelButton" />
+
+        <ImageView
+            android:id="@+id/imgOrder"
+            android:layout_width="@dimen/fourfive"
+            android:layout_height="@dimen/fourfive"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/onetwo"
+            android:src="@drawable/ic_order_up"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/imageSearchButton"
+            android:layout_width="@dimen/fourfive"
+            android:layout_height="@dimen/fourfive"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/onetwo"
+            android:src="@drawable/ic_search"
+            android:layout_toLeftOf="@+id/imgOrder"
+            android:layout_toStartOf="@+id/imgOrder"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:textSize="16sp"
+            android:id="@+id/edittextSearch"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/imgOrder"
+            android:layout_toEndOf="@+id/imageBackSearch"
+            android:layout_toRightOf="@+id/imageBackSearch" />
+
+        <ImageView
+            android:id="@+id/imageBackSearch"
+            android:layout_width="@dimen/fourfive"
+            android:layout_height="@dimen/fourfive"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/onetwo"
+            android:src="@drawable/back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageCancelButton"
+            android:layout_width="@dimen/fourfive"
+            android:layout_height="@dimen/fourfive"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/onetwo"
+            android:src="@drawable/back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourfive"
+        android:background="@color/color_e65e5e"
+        android:visibility="visible"
+        android:layout_below="@+id/relHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageSellectAll"
+            android:layout_width="@dimen/fourfive"
+            android:layout_height="@dimen/fourfive"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/onetwo"
+            android:src="@drawable/ic_select_all"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/imageDeleteButton"
+            android:layout_width="@dimen/fourfive"
+            android:layout_height="@dimen/fourfive"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/onetwo"
+            android:src="@drawable/ic_delete"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageSellectAll"
+            android:layout_toStartOf="@+id/imageSellectAll" />
+
+        <ImageView
+            android:id="@+id/imageBackButton"
+            android:layout_width="@dimen/fourfive"
+            android:layout_height="@dimen/fourfive"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/onetwo"
+            android:src="@drawable/back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/imageBackupButton"
+            android:layout_width="@dimen/fourfive"
+            android:layout_height="@dimen/fourfive"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/onetwo"
+            android:src="@drawable/ic_backup"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageDeleteButton"
+            android:layout_toStartOf="@+id/imageDeleteButton" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/relSearch">
+
+        <morocco.mycom.myrecorder.utils.CustomRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_toRightOf="@+id/tvDate"
+            android:layout_toEndOf="@+id/tvDate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/tvDate"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/tvCount"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/tvSize"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

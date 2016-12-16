@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourfive"
+        android:background="@color/color_e65e5e" >
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/fourfive"
+            android:layout_height="@dimen/fourfive"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/onetwo"
+            android:src="@drawable/back" />
+
+        <morocco.mycom.myrecorder.utils.CustomTextViewRoboto
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/oneseven" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/adView"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/onezero"
+                        android:layout_marginTop="@dimen/onefive"
+                        android:text="@string/notifications"
+                        android:textColor="@color/color_e65e5e"
+                        android:textSize="@dimen/onetwo" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_marginRight="@dimen/five"
+                        android:background="#dddddd" />
+
+                    <RelativeLayout
+                        android:id="@+id/relNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:paddingBottom="@dimen/five" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/checkEnableNotification"
+                            android:orientation="vertical" >
+
+                            <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:layout_marginTop="@dimen/five"
+                                android:text="Enable Notification"
+                                android:textColor="@color/color_a82b2b"
+                                android:textSize="@dimen/oneseven" />
+
+                            <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:layout_marginTop="@dimen/five"
+                                android:text="Show notification bar after each call arrival"
+                                android:textColor="@color/color_a82b2b"
+                                android:textSize="@dimen/onetwo" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/checkEnableNotification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/five"
+
+                            android:clickable="false"
+                            android:focusable="false" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one"
+                        android:background="#dddddd" />
+
+                    <RelativeLayout
+                        android:id="@+id/relSaveThisCall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:paddingTop="@dimen/five" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/checkSaveConfirmation"
+                            android:orientation="vertical" >
+
+                            <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:text="Save this call?"
+                                android:textColor="@color/color_a82b2b"
+                                android:textSize="@dimen/oneseven" />
+
+                            <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:layout_marginTop="@dimen/five"
+                                android:text="Ask after each recorded call"
+                                android:textColor="@color/color_a82b2b"
+                                android:textSize="@dimen/onetwo" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/checkSaveConfirmation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/five"
+
+                            android:clickable="false"
+                            android:focusable="false" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relHeader"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical" >
+
+                    <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/onezero"
+                        android:layout_marginTop="@dimen/onefive"
+                        android:text="Recording Settings"
+                        android:textColor="@color/color_e65e5e"
+                        android:textSize="@dimen/onetwo" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_marginRight="@dimen/five"
+                        android:background="#dddddd" />
+
+                    <RelativeLayout
+                        android:id="@+id/relFormat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:paddingBottom="@dimen/five"
+                        android:paddingTop="@dimen/five" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/audioFormatDropDown"
+                            android:orientation="vertical" >
+
+                            <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:layout_marginTop="@dimen/five"
+                                android:text="File Format"
+                                android:textColor="@color/color_a82b2b"
+                                android:textSize="@dimen/oneseven" />
+
+                            <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                                android:id="@+id/txtFormat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:layout_marginTop="@dimen/five"
+                                android:text="3GPP"
+                                android:textColor="@color/color_a82b2b"
+                                android:textSize="@dimen/onetwo" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/audioFormatDropDown"
+                            android:layout_width="@dimen/threefive"
+                            android:layout_height="@dimen/threefive"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/onezero"
+                            android:src="@drawable/dropdown_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/onezero"
+                        android:layout_marginTop="@dimen/onefive"
+                        android:text="@string/passcode"
+                        android:textColor="@color/color_e65e5e"
+                        android:textSize="@dimen/onetwo" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_marginRight="@dimen/five"
+                        android:background="#dddddd" />
+
+                    <RelativeLayout
+                        android:id="@+id/relPasscode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:paddingBottom="@dimen/five" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/checkEnablePasscode"
+                            android:orientation="vertical" >
+
+                            <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:layout_marginTop="@dimen/five"
+                                android:text="Enable Passcode"
+                                android:textColor="@color/color_a82b2b"
+                                android:textSize="@dimen/oneseven" />
+
+                            <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:layout_marginTop="@dimen/five"
+                                android:text="Protect your recordings with  passcode authentication every time you start the app"
+                                android:textColor="@color/color_a82b2b"
+                                android:textSize="@dimen/onetwo" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/checkEnablePasscode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/five"
+
+                            android:clickable="false"
+                            android:focusable="false" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one"
+                        android:background="#dddddd" />
+
+                    <RelativeLayout
+                        android:id="@+id/relChangePasscode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:paddingBottom="@dimen/five"
+                        android:paddingTop="@dimen/five" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical" >
+
+                            <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:text="Change Passcode"
+                                android:textColor="@color/color_a82b2b"
+                                android:textSize="@dimen/oneseven" />
+
+                            <morocco.mycom.myrecorder.utils.CustomTextViewOpenSans
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:layout_marginTop="@dimen/five"
+                                android:text="Default passcode is 1234"
+                                android:textColor="@color/color_a82b2b"
+                                android:textSize="@dimen/onetwo" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/nextChangePassword"
+                            android:layout_width="@dimen/threefive"
+                            android:layout_height="@dimen/threefive"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/onezero"
+                            android:src="@drawable/next" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one"
+                        android:background="#dddddd" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_settingscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" >
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</LinearLayout>

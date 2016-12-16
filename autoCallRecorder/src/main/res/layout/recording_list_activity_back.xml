@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true" tools:openDrawer="start">
+
+    <RelativeLayout
+    android:id="@+id/existedlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourfive"
+            android:background="@color/color_e65e5e" >
+
+            <morocco.mycom.myrecorder.utils.CustomTextViewRoboto
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recordings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/oneseven"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgMenu"
+                android:layout_toEndOf="@+id/imgMenu"
+                android:id="@+id/view" />
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/onezero"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/menu"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgPlayStore"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/ic_playstore"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true" />
+
+            <ImageView
+                android:id="@+id/imgOrder"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/ic_order_up"
+                android:layout_toLeftOf="@+id/imgPlayStore"
+                android:layout_toStartOf="@+id/imgPlayStore" />
+
+            <ImageView
+                android:id="@+id/imageSearchButton"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/ic_search"
+                android:layout_toLeftOf="@+id/imgOrder"
+                android:layout_toStartOf="@+id/imgOrder"
+                android:layout_alignParentTop="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:textSize="16sp"
+                android:id="@+id/edittextSearch"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageClose"
+                android:layout_toRightOf="@+id/imageBackSearch"
+                android:layout_toEndOf="@+id/imageBackSearch"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageClose"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/close"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/imgOrder"
+                android:layout_toStartOf="@+id/imgOrder"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageBackSearch"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/back"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourfive"
+            android:background="@color/color_e65e5e"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/menu"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/imageSellectAll"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/ic_select_all"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgBack"
+                android:layout_toStartOf="@+id/imgBack" />
+
+            <ImageView
+                android:id="@+id/imageStar"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/ic_star"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageSellectAll"
+                android:layout_toStartOf="@+id/imageSellectAll" />
+
+            <ImageView
+                android:id="@+id/imageShare"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/ic_share"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageStar"
+                android:layout_toStartOf="@+id/imageStar" />
+
+            <ImageView
+                android:id="@+id/imageDeleteButton"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/ic_delete"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageShare"
+                android:layout_toStartOf="@+id/imageShare" />
+
+            <ImageView
+                android:id="@+id/imageBackButton"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/onetwo"
+                android:src="@drawable/back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/adView_main"
+                android:background="#eceaea">
+                <android.support.v4.view.PagerTabStrip
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffffff"
+                    android:background="#f96666" />
+            </android.support.v4.view.ViewPager>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id" >
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+    <ListView
+        android:id="@+id/drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#a1a0a0"
+        android:choiceMode="singleChoice"/>
+
+</android.support.v4.widget.DrawerLayout>

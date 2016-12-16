@@ -1,0 +1,102 @@
+[
+    {
+        "outputFile": "E:\\Work2016\\20160408_autocallrecorder\\AutoCallRecorder\\rateThisApp_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ja\\values-ja.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 49,
+                    "endOffset": 100
+                },
+                "from": {
+                    "file": "E:\\Work2016\\20160408_autocallrecorder\\AutoCallRecorder\\rateThisApp_Lib\\build\\intermediates\\bundles\\debug\\res\\values-ja\\values-ja.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 49,
+                        "endOffset": 100
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 94,
+                    "endOffset": 195
+                },
+                "from": {
+                    "file": "E:\\Work2016\\20160408_autocallrecorder\\AutoCallRecorder\\rateThisApp_Lib\\build\\intermediates\\bundles\\debug\\res\\values-ja\\values-ja.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 105,
+                        "endColumn": 94,
+                        "endOffset": 195
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 200,
+                    "endColumn": 45,
+                    "endOffset": 241
+                },
+                "from": {
+                    "file": "E:\\Work2016\\20160408_autocallrecorder\\AutoCallRecorder\\rateThisApp_Lib\\build\\intermediates\\bundles\\debug\\res\\values-ja\\values-ja.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 200,
+                        "endColumn": 45,
+                        "endOffset": 241
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 246,
+                    "endColumn": 44,
+                    "endOffset": 286
+                },
+                "from": {
+                    "file": "E:\\Work2016\\20160408_autocallrecorder\\AutoCallRecorder\\rateThisApp_Lib\\build\\intermediates\\bundles\\debug\\res\\values-ja\\values-ja.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 246,
+                        "endColumn": 44,
+                        "endOffset": 286
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 291,
+                    "endColumn": 59,
+                    "endOffset": 346
+                },
+                "from": {
+                    "file": "E:\\Work2016\\20160408_autocallrecorder\\AutoCallRecorder\\rateThisApp_Lib\\build\\intermediates\\bundles\\debug\\res\\values-ja\\values-ja.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 59,
+                        "endOffset": 346
+                    }
+                }
+            }
+        ]
+    }
+]
